@@ -1,16 +1,25 @@
-# light_dark_theme
+# LightDark
 
-A new Flutter project.
+A Flutter app demonstrating runtime switching between Light and Dark themes using **Provider** for state management.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+##  Features
 
-A few resources to get you started if this is your first Flutter project:
+- Toggle between Light and Dark Theme dynamically  
+- Uses `Provider` to manage theme state  
+- Applies theming across the entire app (backgrounds, buttons, etc.)  
+- Clean and modular structure for easy understanding and customization
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+##  Project Structure
+
+├── **components/**
+│ ├── box.dart # A styled container widget
+│ └── button.dart # Custom button widget used for toggling
+├── **pages/**
+│ └── home_page.dart # Main screen with theme toggle logic
+├── **theme/**
+│ └── theme_provider.dart # Contains ThemeProvider using ChangeNotifier
+├── main.dart # App entry point with provider setup
