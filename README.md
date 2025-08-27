@@ -16,10 +16,17 @@ A Flutter app demonstrating runtime switching between Light and Dark themes usin
 ##  Project Structure
 
 ├── **components/**
+
 │ ├── box.dart # A styled container widget
+
 │ └── button.dart # Custom button widget used for toggling
+
 ├── **pages/**
+
 │ └── home_page.dart # Main screen with theme toggle logic
+
 ├── **theme/**
+
 │ └── theme_provider.dart # Contains ThemeProvider using ChangeNotifier
+
 ├── main.dart # App entry point with provider setup
